@@ -1,36 +1,46 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 32
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 22
+    buildToolsVersion "30.0.2"
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "app.org.halsa360"
-        minSdkVersion 14
-        targetSdkVersion 32
+        minSdkVersion 16
         versionCode 1
         versionName "1.0"
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_5
+            targetCompatibility JavaVersion.VERSION_1_5
+        }
+        multiDexEnabled true
+
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
-}
-repositories {
-    maven {
-        url 'http://dl.bintray.com/amulyakhare/maven'
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    compileOptions {
+        targetCompatibility 1.7
+        sourceCompatibility 1.7
     }
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:32.1.1'
-    compile 'com.android.support:design:32.1.1'
-    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/android-async-http-1.4.4.jar')
-    compile files('libs/sun.misc.BASE64Decoder.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:22.2.1'
+    implementation 'com.android.support:design:22.2.1'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/android-async-http-1.4.4.jar')
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
 }
