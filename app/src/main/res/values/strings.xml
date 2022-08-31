@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Halsa 360</string>
+    <string name="title_activity_doctor__home_">Doctor_Home_Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_done">Done</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_settings">Settings</string>
+    <string name="booking_status">Booking Status</string>
+    <string-array name="blood_group">
+        <item>Select your Blood Group</item>
+        <item>O +</item>
+        <item>O -</item>
+        <item>A +</item>
+        <item>A -</item>
+        <item>B +</item>
+        <item>B -</item>
+        <item>AB +</item>
+        <item>AB -</item>
+
+    </string-array>
+    <string-array name="month">
+        <item>Months</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="section">
+        <item>Session1</item>
+        <item>Session2</item>
+        <item>Session3</item>
+        <item>Session4</item>
+
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_new__booking_">Booking List</string>
+</resources>

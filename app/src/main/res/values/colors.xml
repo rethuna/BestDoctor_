@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a79d</color>
+    <color name="colorPrimaryDark">#00a79d</color>
+    <color name="colorMain">#00a79d</color>
+    <color name="ash_background">#bbbdc0</color>
+    <color name ="ash_font">#404041</color>
+    <color name ="colorwhite">#FFFFFF</color>
+    <color name ="light_peacock">#e4f1f3</color>
+    <color name ="heatherash">#9C9C9C</color>
+    <color name ="ash">#706D6C</color>
+    <color name="offwhite">#FFF</color>
+    <color name="lightgrey">#D7D7D7</color>
+    <color name="white">#ffffff</color>
+</resources>

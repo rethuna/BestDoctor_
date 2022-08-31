@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/imagelogin"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <ImageView
+            android:id="@+id/img"
+            android:background="@drawable/halsalogin1"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:nextFocusDown="@+id/edittext_password"
+            android:id="@+id/edittext_username"
+            android:inputType="text"
+            android:hint="User Name"
+            android:textSize="@dimen/patient_input"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:background="@drawable/border_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:nextFocusDown="@+id/button_signin"
+            android:id="@+id/edittext_password"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textSize="@dimen/patient_input"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:background="@drawable/border_top_nill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Remember Me"
+            android:background="@android:color/transparent"
+            android:id="@+id/saveLoginCheckBox"
+            android:checked="false" />
+
+        <Button
+            android:textSize="@dimen/patient_input"
+            android:textColor="@color/colorwhite"
+            android:id="@+id/button_signin"
+            android:text="Sign in"
+            android:background="@color/colorMain"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview_forgot_password"
+            android:gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/patient_input"
+            android:text="Forgot Password?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview_newuser_signup"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/patient_input"
+            android:text="Are you a new user? Sign Up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollojt"
+            android:fillViewport="true"
+           >
+
+            <RelativeLayout
+                android:id="@+id/layout_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ListView
+                    android:id="@+id/layout_demos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+        >
+                </ListView>
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_below="@+id/layout_demos"
+                 android:id="@+id/freespace"
+                 android:background="@color/lightgrey"
+                 android:layout_width="match_parent"
+                 android:layout_height="3dp">
+                      </LinearLayout>
+                <include
+
+                    android:id="@+id/layout_booking"
+                    android:layout_below="@+id/layout_demos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    layout="@layout/layout_booking_status" />
+                <LinearLayout
+                    android:id="@+id/freespace1"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/layout_booking"
+                    android:background="@color/lightgrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp">
+                            </LinearLayout>
+                <include
+                    android:id="@+id/layout_doc_name"
+                    android:layout_below="@+id/freespace1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/layout_booking_doctor" />
+
+
+            </RelativeLayout>
+        </ScrollView>

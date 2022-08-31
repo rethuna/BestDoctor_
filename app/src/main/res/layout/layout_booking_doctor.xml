@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/layout_bg"
+    android:layout_marginTop="@dimen/margin_above"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:hint="Booking For"
+                android:id="@+id/bookingfor"
+                android:textSize="16dp"
+                android:clickable="true"
+                android:background="@drawable/boarder_bottom_line"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorMain"
+                android:duplicateParentState="true"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+
+                    />
+
+                <LinearLayout
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:paddingLeft="20dp"
+                        android:text="Doctor"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:id="@+id/doctor"
+                        android:src="@drawable/hospital"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:textSize="10dp"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/ash_background"
+                        android:id="@+id/button_dr"
+                        android:width="300dp"
+                        android:height="20dp"
+                        android:background="@drawable/boarder_rect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="-1dp"
+
+                        />
+                    </LinearLayout>
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:textSize="@dimen/Booking_text"
+                        android:paddingLeft="3dp"
+                         android:text="Clinic"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/booking_date1"
+                        android:src="@drawable/clinic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:textSize="10dp"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:drawablePadding="4dp"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/ash_background"
+                        android:id="@+id/button_clinic"
+                        android:width="300dp"
+                        android:height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/boarder_rect"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="-1dp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!-- ......................................-->
+
+
+

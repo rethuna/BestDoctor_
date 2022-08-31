@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ash_background"
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="60dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:background="@color/ash_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:id="@+id/daterel_layout">
+
+            <RelativeLayout
+                android:background="@drawable/boarder_right_line"
+                android:layout_width="250dp"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:textColor="@color/colorMain"
+                    android:textSize="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/datetxt"
+                    android:layout_width="75dp"
+                    android:layout_height="80dp"
+                    android:text="12"
+                 />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/ash_background"
+                    android:textAllCaps="false"
+                    android:id="@+id/datemnthtxt"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/datetxt"
+                    android:text="Jan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:textColor="@color/ash_background"
+                    android:id="@+id/datemnthyr"
+                    android:layout_marginLeft="85dp"
+                    android:layout_below="@+id/datemnthtxt"
+                    android:text="2016"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="56dp"
+                     android:textColor="@color/colorMain"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp"
+                    android:id="@+id/daytxt"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Thursday"/>
+
+                <TextView
+                        android:textSize="10dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16 days to go"
+                        android:id="@+id/textViewcount" />
+
+           </RelativeLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+             <TextView
+                android:paddingRight="3dp"
+                android:textColor="@color/colorMain"
+                android:textAlignment="center"
+                android:background="@drawable/border_top_nill"
+                android:layout_marginLeft="215dp"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="3:15 am"
+                android:paddingTop="10dp"
+                android:textSize="25dp"
+                android:paddingLeft="3dp"
+                android:id="@+id/txtTime"
+            />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:background="@color/colorMain"
+                android:layout_marginLeft="215dp"
+                android:paddingTop="5dp"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:paddingLeft="2dp"
+                android:textSize="25dp"
+                android:id="@+id/txttoken"
+            />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/daterel_layout"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/clinic_layout">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                layout="@layout/clinc"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/clinic_layout"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@color/white"
+            android:id="@+id/patient_layout">
+
+            <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/patient"/>
+
+        </RelativeLayout>
+
+
+        <Button
+
+            android:layout_marginLeft="140dp"
+            android:id="@+id/savebtn"
+            android:background="@drawable/layout_bgwhite"
+            android:text="Finish"
+            android:textColor="@color/white"
+            android:layout_below="@+id/patient_layout"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+     </RelativeLayout>
+</ScrollView>

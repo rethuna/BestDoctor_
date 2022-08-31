@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView_book"
+            />
+        <LinearLayout
+            android:layout_toRightOf="@+id/imageView_book"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/text_bookname"
+                android:textSize="16dp"
+                android:text="jitha susan shaji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_bookphoneno"
+                android:textSize="14dp"
+                android:text="9400792324"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_bookage"
+                android:textSize="13dp"
+                android:text="23 years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginRight="40dp"
+
+            android:background="@drawable/time_box"
+            android:layout_toLeftOf="@+id/delete_checkbox"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/colorwhite"
+                    android:id="@+id/booking_slot_text"
+                    android:textSize="12dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    />
+                <TextView
+                    android:textColor="@color/colorMain"
+                    android:textSize="12dp"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_toLeftOf="@+id/booking_slot_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3:45 pm"
+                    android:id="@+id/booking_section_text"
+                    />
+            </LinearLayout>
+            <!--<TextView
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/booking_slot_text"
+                android:textSize="12dp"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linearrr"
+                />
+            <LinearLayout
+                android:layout_marginRight="@+id/booking_slot_text"
+
+                android:id="@+id/linearrr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@+id/booking_slot_text"
+
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/booking_section_text"
+                    android:textSize="12dp"
+                    android:text="8:30 am"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>-->
+
+
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_alignParentRight="true"
+            android:id="@+id/booking_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+-->
+        <CheckBox
+
+            android:id="@+id/delete_checkbox"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp" />
+
+
+
+        <!--  </RelativeLayout>-->
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

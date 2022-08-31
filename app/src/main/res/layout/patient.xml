@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/boarder_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:textColor="@color/colorMain"
+            android:paddingLeft="5dp"
+            android:id="@+id/patienttxt"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Name"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:background="@drawable/boarder_right_line"
+            android:drawableLeft="@drawable/search20"
+            android:textAllCaps="false"
+            android:id="@+id/searchh"
+            android:layout_marginLeft="58dp"
+            android:textSize="15dp"
+            android:text="Search"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:paddingRight="15dp"
+            android:textAllCaps="false"
+            android:id="@+id/addnewtxt"
+            android:textSize="15dp"
+            android:text=" Add New"
+            android:drawableLeft="@drawable/addicon20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:background="@drawable/muti"
+            android:layout_marginLeft="10dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+
+        <LinearLayout
+            android:id="@+id/ppat"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+             <TextView
+                 android:id="@+id/patientnametxt"
+                 android:hint="Name"
+                 android:editable="false"
+                 android:layout_marginTop="5dp"
+                 android:layout_width="290dp"
+                 android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:hint="Age"
+                android:id="@+id/agetxt"
+                android:editable="false"
+                android:layout_marginTop="5dp"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:hint="Location"
+                android:id="@+id/Locationtxt"
+                android:editable="false"
+                android:layout_marginTop="5dp"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+   <!--<LinearLayout
+       android:paddingLeft="5dp"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <include
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           layout="@layout/age"/>-->
+      <!-- <TextView
+           android:layout_marginTop="60dp"
+           android:layout_marginLeft="10dp"
+           android:textSize="@dimen/text_size"
+           android:id="@+id/agetxt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Age"/>
+
+       <TextView
+
+          android:layout_marginTop="30dp"
+           android:layout_marginLeft="10dp"
+           android:textSize="@dimen/text_size"
+           android:id="@+id/Locationtxt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Location"/>
+-->
+   </LinearLayout>
+<!--</LinearLayout>-->
+
+
+
+
+
+
+
